@@ -1,8 +1,21 @@
-#include "./headers/get_next_line.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vquiroga <vquiroga@student.42madrid.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/03 14:45:28 by vquiroga          #+#    #+#             */
+/*   Updated: 2023/06/03 14:55:32 by vquiroga         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "get_next_line.h"
+
 void	ft_bzero(void *s, size_t len)
 {
 	unsigned char	*str;
-	size_t	i;
+	size_t			i;
 
 	str = (unsigned char *)s;
 	i = 0;
@@ -13,8 +26,6 @@ void	ft_bzero(void *s, size_t len)
 	}
 }
 
-
-
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;
@@ -24,7 +35,6 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -50,7 +60,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (str_out);
 }
 
-// join and free
 char	*ft_join_and_free(char *buffer, char *buf)
 {
 	char	*temp;
